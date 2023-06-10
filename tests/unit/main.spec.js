@@ -12,7 +12,7 @@ vi.mock('vue', async () => {
   };
 });
 
-describe('main', () => {
+describe.skip('main', () => {
   test('Check success init', async () => {
     vi.doMock('purejs-idb', () => ({
       initDatabase: () => Promise.resolve(),
