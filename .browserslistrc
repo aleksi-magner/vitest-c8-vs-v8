@@ -1,0 +1,14 @@
+>0.3%
+not dead
+not ie <= 11
+not op_mini all
+Opera >= 66
+OperaMobile >= 66
+Chrome >= 87
+ChromeAndroid >= 87
+Android >= 87
+Firefox >= 72
+FirefoxAndroid >= 72
+Safari >= 10.3
+iOS >= 10.3
+Edge >= 88

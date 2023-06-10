@@ -1,0 +1,36 @@
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-property: opacity, height;
+  transition-duration: 0.23s;
+  transition-timing-function: linear;
+  overflow: hidden;
+}
+
+.move-left-enter-active,
+.move-left-leave-active,
+.move-right-enter-active,
+.move-right-leave-active {
+  position: absolute;
+  top: 0;
+  transition-property: opacity, height, transform;
+  transition-duration: 0.23s;
+  transition-timing-function: ease;
+  overflow: hidden;
+}
+
+.move-left-leave-to,
+.move-right-enter-from {
+  opacity: 0;
+  transform: translate(-40px, 0);
+}
+
+.move-left-enter-from,
+.move-right-leave-to {
+  opacity: 0;
+  transform: translate(40px, 0);
+}

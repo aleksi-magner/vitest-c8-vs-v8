@@ -1,0 +1,41 @@
+{
+  "include": ["src/**/*", "tests/**/*", "vite.config.*"],
+  "exclude": [],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "#utils": ["./tests/utils.ts"],
+      "#fixtures/*": ["./tests/fixtures/*"]
+    },
+
+    "composite": true,
+    "types": ["node", "vite", "vite/client", "vite-plugin-pwa/client", "vitest"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker"],
+
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "useDefineForClassFields": true,
+
+    "strict": true,
+    "allowJs": true,
+    "noImplicitThis": true,
+
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    // Required in Vue projects
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+
+    // Required in Vite
+    "isolatedModules": true,
+    // Any imports or exports without a type modifier are left around.
+    // Anything that uses the type modifier is dropped entirely.
+    "verbatimModuleSyntax": true
+  }
+}

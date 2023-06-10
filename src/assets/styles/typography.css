@@ -1,0 +1,140 @@
+.text-headline,
+.text-subtitle,
+.text-body,
+.text-description {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+.text-headline {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0.011em;
+}
+
+.text-subtitle {
+  font-size: 0.93rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.009em;
+}
+
+.text-body {
+  font-size: 0.83rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.011em;
+}
+
+.text-description {
+  font-size: 0.68rem;
+  line-height: 1.05rem;
+  letter-spacing: -0.011em;
+}
+
+@media (min-width: 320px) {
+  .text-headline {
+    font-size: 1.15rem;
+  }
+
+  .text-subtitle {
+    font-size: 1rem;
+  }
+
+  .text-body {
+    font-size: 0.85rem;
+  }
+
+  .text-description {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .text-headline {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .text-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.35rem;
+  }
+
+  .text-body {
+    font-size: 0.87rem;
+    line-height: 1.3rem;
+  }
+
+  .text-description {
+    font-size: 0.8rem;
+    line-height: 1.15rem;
+  }
+}
+
+.text-base {
+  color: var(--base) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-muted {
+  color: var(--muted) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-info {
+  color: var(--info) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+.text-error {
+  color: var(--error) !important;
+}
+
+.text-gold {
+  color: var(--gold) !important;
+}
+
+.text-pink {
+  color: var(--pink) !important;
+}
+
+.text-white {
+  color: var(--white) !important;
+}
+
+.text-priority {
+  color: var(--priority) !important;
+}
+
+.text-border {
+  color: var(--border-color) !important;
+}
+
+.text-bg {
+  color: var(--bg) !important;
+}
+
+.text-custom {
+  --custom-color: var(--secondary);
+
+  color: var(--custom-color) !important;
+}
